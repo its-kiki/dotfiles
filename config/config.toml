@@ -1,0 +1,19 @@
+[tools]
+bun = "1.4.4"
+gcloud = "590.0.1"
+gh = "2.103.3"
+"npm:@googleworkspace/cli" = "0.22.5"
+"npm:cf" = "1.0.0-beta.23"
+"npm:neon" = "8.12.2"
+pipx = "1.18.14"
+"pipx:pytest" = "9.2.0"
+# vercel 65.x ships no provenance attestation (publisher = GitHub Actions OIDC trusted
+# publisher, maintainers unchanged); mise's no-downgrade policy needs per-package exempts.
+"npm:vercel" = { version = "65.4.0", trust_policy_excludes = ["vercel@65.4.0", "@vercel/backends@23.0.0", "@vercel/build-utils@15.1.0", "@vercel/cli-auth@0.3.13", "@vercel/cli-config@0.3.4", "@vercel/container@23.0.0", "@vercel/detect-agent@1.2.7", "@vercel/elysia@23.0.0", "@vercel/express@23.0.0", "@vercel/fastify@23.0.0", "@vercel/go@26.0.0", "@vercel/h3@23.0.0", "@vercel/hono@23.0.0", "@vercel/hydrogen@24.0.0", "@vercel/koa@23.0.0", "@vercel/nestjs@23.0.0", "@vercel/next@27.0.0", "@vercel/node@28.0.0", "@vercel/python@29.0.0", "@vercel/python-analysis@0.15.2", "@vercel/redwood@25.0.0", "@vercel/remix-builder@28.0.0", "@vercel/ruby@25.0.0", "@vercel/rust@24.0.0", "@vercel/static-build@25.0.0", "@vercel/vc-native-darwin-arm64@65.4.0", "@vercel/vc-native-darwin-x64@65.4.0", "@vercel/vc-native-linux-arm64@65.4.0", "@vercel/vc-native-linux-x64@65.4.0", "@vercel/static-config@3.4.4", "@vercel/oidc@3.8.10", "@vercel/cervel@0.1.89", "@vercel/error-utils@2.2.1", "@vercel/gatsby-plugin-vercel-analytics@1.0.12", "@vercel/gatsby-plugin-vercel-builder@2.2.81", "@vercel/cli-config@0.3.1", "@vercel/cli-exec@1.0.1"] }
+
+[dotfiles]
+"~/.bashrc" = { mode = "track" }
+"~/.config/mise" = { mode = "track" }
+"~/.gitconfig" = { mode = "track" }
+"~/.npmrc" = { mode = "track" }
+"~/.profile" = { mode = "track" }
