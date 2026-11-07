@@ -15,5 +15,13 @@ pipx = "1.18.14"
 "~/.bashrc" = { mode = "track" }
 "~/.config/mise" = { mode = "track" }
 "~/.gitconfig" = { mode = "track" }
+"~/.local/bin/mise-dot-autosave.sh" = { mode = "track" }
+"~/.local/bin/mise-sync-path.sh" = { mode = "track" }
 "~/.npmrc" = { mode = "track" }
 "~/.profile" = { mode = "track" }
+
+[tasks.bootstrap]
+# Setup that dotfiles do not cover: where the host PATH omits ~/.local/bin, mirror
+# mise's shims into a directory it does list, so non-login shells resolve the tools.
+run = "bash ~/.local/bin/mise-sync-path.sh"
+

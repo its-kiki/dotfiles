@@ -20,6 +20,18 @@
       "variants": []
     },
     {
+      "path": "home/.local/bin/mise-dot-autosave.sh",
+      "autosave": true,
+      "encrypt": false,
+      "variants": []
+    },
+    {
+      "path": "home/.local/bin/mise-sync-path.sh",
+      "autosave": true,
+      "encrypt": false,
+      "variants": []
+    },
+    {
       "path": "home/.npmrc",
       "autosave": true,
       "encrypt": false,
